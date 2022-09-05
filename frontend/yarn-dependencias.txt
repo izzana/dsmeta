@@ -1,0 +1,7 @@
+Comando para criar projeto react com typescript, que é a linguagem que usaremos
+yarn create vite frontend --template react-ts
+
+Comando para baixar as dependencias que o meu projeto precisa
+yarn
+
+Comando para rodar a minha aplicaçãorder-yarn dev1
