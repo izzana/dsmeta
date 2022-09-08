@@ -1,0 +1,41 @@
+No react cada componente é armazenado em um arquivo .tsx
+Um componente React não pode exportar mais de uma tag, 
+se quisermos colocar mais de um precisamos colocar entre fragment <> </>.
+Ex:
+<>
+tags html com componentes
+</>
+
+Ex:
+import NotificationButton from "./components/NotificationButton"
+
+function App() {
+  return (
+    <>
+      <h1>Opa</h1>
+      <NotificationButton></NotificationButton>
+    </>
+  )
+}
+
+export default App
+
+Ao criarmos um component podemos chamá-lo em outro lugar e todo o ]
+conteúdo que colocamos nele será jogado onde colocamos, podemos adicionar 
+quantas vezes quisermos. Ele é um pedaço de código reutilizável.
+
+Para colocar class de estilo: className
+
+function NotificationButton() {
+    return (
+        <div className="dsmeta-red-btn">
+            <img src={icon} alt="Notificar"/> -> a tag img precisa receber barrinha
+        </div>
+    )
+  }
+  
+  export default NotificationButton
+  
+        //escolho uma palavra chave, pode ser qualquer uma
+  import icon from '../../assets/img/notification-icon.svg'//importando a imagem que quero usar
+                //com 2 pontos eu estou saindo da pasta
