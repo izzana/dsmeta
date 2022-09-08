@@ -40,12 +40,36 @@ function NotificationButton() {
   import icon from '../../assets/img/notification-icon.svg'//importando a imagem que quero usar
                 //com 2 pontos eu estou saindo da pasta
 
-Adicionando DatePicker
+Adicionando DatePicker, componente externo
 yarn add react-datepicker@4.8.0 @types/react-datepicker@4.4.2
 
 <DatePicker
     selected={new Date()}
-    onChange={(date: Date) => {}}
-    className="dsmeta-form-control"
+    onChange={(date: Date) => {}}//pega a data atual
+    className="dsmeta-form-control" //usei o estilo que eu tinha criado
     dateFormat="dd/MM/yyyy"
 />
+
+Para alterar o visual de algum componente React nós alteramos os dados, então
+o React vai lá e altera o visual
+
+
+React Hook useState -> usamos para manter um estado dentro de um componente, é a forma 
+correta
+
+React Hook -> Recursos do React que estão atrelados ao ciclo de vida do componente,
+esse Hook está atrelado ao component, dessa forma quando programamos um React Hook estaremos
+programando de uma forma adequada, respeitando o comportamento do component
+
+Quando fazemos um React Hook useState, esse useState é quando queremos guardar o estadode um component,
+se alterarmos o useState o component altera o visual
+
+
+Declarando um estado em React, precisamos da const e da função               
+//function que altera meu dado
+  const [minDate, setMinDate] = useState(new Date());//data mínima, dentro do useState estou passando a data de hoje
+
+
+Macete para criar uma data de X dias atrás:
+
+const date = new Date(new Date().setDate(new Date().getDate() - 365));
