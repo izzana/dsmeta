@@ -16,3 +16,14 @@ a, a:hover, a:visited {/*visited -> quando o link já foi visitado*/
     color: unset;/*não vai ter nenhuma cor diferente do padrão*/
     text-decoration: none;
 }
+
+.dsmeta-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;/*macete para alinhar ao centro*/
+}
+
+#sales {
+    padding: 40px 10px;/*primeira medida na vertical (em cima e embaixo, segunda medida laterais*/
+    
+}
