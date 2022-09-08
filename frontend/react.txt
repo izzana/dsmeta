@@ -39,3 +39,13 @@ function NotificationButton() {
         //escolho uma palavra chave, pode ser qualquer uma
   import icon from '../../assets/img/notification-icon.svg'//importando a imagem que quero usar
                 //com 2 pontos eu estou saindo da pasta
+
+Adicionando DatePicker
+yarn add react-datepicker@4.8.0 @types/react-datepicker@4.4.2
+
+<DatePicker
+    selected={new Date()}
+    onChange={(date: Date) => {}}
+    className="dsmeta-form-control"
+    dateFormat="dd/MM/yyyy"
+/>
